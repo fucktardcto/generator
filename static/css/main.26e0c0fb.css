@@ -96,6 +96,7 @@ padding:10px
 #options div {
 align-items:center;
 display:flex
+  background-color:#FFF;
 }
 
 #options label {
@@ -145,8 +146,8 @@ flex-direction:column;
 gap:6px;
 height:100px;
 justify-content:center;
-opacity:.6;
 width:100px
+      background-color: #FFF;
 }
 
 .asset.asset-image {
@@ -205,7 +206,7 @@ margin-bottom:10px
 }
 
 .tab-button {
-background:none;
+background:#FFF;
 border:none;
 border-bottom:3px solid #0000;
 cursor:pointer;
