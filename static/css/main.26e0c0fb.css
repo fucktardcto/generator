@@ -22,7 +22,7 @@ min-height:100%
 }
 
 body {
-background-color:#fff
+background-color:#fff;
 }
 
 nav {
@@ -95,7 +95,7 @@ padding:10px
 
 #options div {
 align-items:center;
-display:flex
+display:flex;
   background-color:#FFF;
 }
 
