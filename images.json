@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "path": "images/1.jpg",
+        "textElements": [
+            {
+                "text": "Default Text 1",
+                "x": 307,
+                "y": 36,
+                "color": "#000",
+                "fontSize": 22
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "path": "images/2.jpg",
+        "textElements": [
+            {
+                "text": "Default Text 1",
+                "x": 377,
+                "y": 52,
+                "color": "#000",
+                "fontSize": 22
+            },
+            {
+                "text": "Default Text 2",
+                "x": 57,
+                "y": 483,
+                "color": "#000",
+                "fontSize": 22
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "path": "images/3.jpg",
+        "textElements": [
+            {
+                "text": "Default Text 1",
+                "x": 224,
+                "y": 19,
+                "color": "#000",
+                "fontSize": 20
+            },
+            {
+                "text": "Default Text 2",
+                "x": 460,
+                "y": 184,
+                "color": "#000",
+                "fontSize": 19
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "path": "images/3.jpg",
+        "textElements": [
+            {
+                "text": "Default Text 1",
+                "x": 224,
+                "y": 19,
+                "color": "#000",
+                "fontSize": 20
+            },
+            {
+                "text": "Default Text 2",
+                "x": 460,
+                "y": 184,
+                "color": "#000",
+                "fontSize": 19
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "path": "images/3.jpg",
+        "textElements": [
+            {
+                "text": "Default Text 1",
+                "x": 224,
+                "y": 19,
+                "color": "#000",
+                "fontSize": 20
+            },
+            {
+                "text": "Default Text 2",
+                "x": 460,
+                "y": 184,
+                "color": "#000",
+                "fontSize": 19
+            }
+        ]
+    }
+]

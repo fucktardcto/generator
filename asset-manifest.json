@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26e0c0fb.css",
+    "main.js": "/static/js/main.c829b70e.js",
+    "static/js/453.a22d5cad.chunk.js": "/static/js/453.a22d5cad.chunk.js",
+    "static/media/michellehandwritting.ttf": "/static/media/michellehandwritting.dd5eae43604f1d5404ab.ttf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.26e0c0fb.css.map": "/static/css/main.26e0c0fb.css.map",
+    "main.c829b70e.js.map": "/static/js/main.c829b70e.js.map",
+    "453.a22d5cad.chunk.js.map": "/static/js/453.a22d5cad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26e0c0fb.css",
+    "static/js/main.c829b70e.js"
+  ]
+}
