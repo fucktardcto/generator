@@ -25,13 +25,13 @@
             min-height: 100vh;
         }
         header {
-            width: 100%; /* Assurez-vous que le header prend toute la largeur */
-            max-width: none; /* Supprimez la contrainte de la largeur maximale */
-            padding: 0; /* Réduisez le padding si vous ne voulez pas d'espace supplémentaire */
+            width: 100%; 
+            max-width: none; 
+            padding: 0; 
             box-sizing: border-box;
         }
         nav {
-            width: 100%; /* La nav doit également prendre toute la largeur de son parent */
+            width: 100%; 
             background-color: #000;
             text-align: center;
             position: relative;
@@ -53,8 +53,8 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex; /* Utilise flex pour que les éléments s'alignent correctement */
-            justify-content: space-around; /* Répartit les éléments uniformément */
+            display: flex;
+            justify-content: space-around;
             width: 100%;
         }
         .nav-links li {
@@ -62,7 +62,7 @@
             position: relative;
         }
         .nav-links li a {
-            display: inline-block; /* Changez en inline-block pour une meilleure disposition */
+            display: inline-block;
             color: #e6e6e6;
             padding: 16px 20px;
             text-decoration: none;
@@ -73,6 +73,62 @@
             overflow: hidden;
             z-index: 1;
         }
+
+        /* Cannonball hover effect for desktop */
+        .nav-links li a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle closest-side, rgba(255, 0, 0, 0.5), transparent);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-links li a:hover {
+            color: #FFF;
+            background-color: transparent; 
+        }
+
+        .nav-links li a:hover::before {
+            width: 200%;
+            height: 200%;
+            opacity: 1;
+        }
+
+        /* Animation for the 'explosion' */
+        .nav-links li a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: cannonballExplosion .4s ease-out forwards;
+            z-index: -1;
+        }
+
+        @keyframes cannonballExplosion {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* Mobile styles */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -98,6 +154,11 @@
                 padding: 10px 15px;
                 font-size: 1em;
                 text-align: center;
+            }
+            /* Remove hover effects for mobile */
+            .nav-links li a::before,
+            .nav-links li a:hover::after {
+                display: none;
             }
         }
     </style>
