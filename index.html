@@ -5,123 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta data-react-helmet="true" name="description" content="Created by the degenerate meme artist ​Mnewbis, Fucktard is unfiltered chaos ​with a hint of autism and a dash of ​dunning Kruger effect." />
     <title>Fucktard by Mnewbis</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script defer="defer" src="/static/js/main.c829b70e.js"></script>
-    <link href="/static/css/main.26e0c0fb.css" rel="stylesheet">
     <style>
-
-        
         body {
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
+            font-family: 'Montserrat', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-nav {
-    background-color: #000;
-    text-align: center;
-    position: relative;
-}
+        header img {
+            width: 100%;
+            height: auto;
+            filter: brightness(90%);
+            margin-bottom: -4px; 
+        }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #e6e6e6;
-    font-size: 2em;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 1001;
-}
+        nav {
+            background-color: #000;
+            text-align: center;
+            position: relative;
+        }
 
-.nav-links {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    display: inline-block;
-    width: 100%;
-}
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #e6e6e6;
+            font-size: 2em;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            z-index: 1001;
+        }
 
-.nav-links li {
-    float: none;
-    display: inline-block;
-    font-size: 1.5em;
-    position: relative;
-}
+        .nav-links {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+        }
 
-.nav-links li a {
-    display: block;
-    color: #e6e6e6;
-    padding: 16px 20px;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
+        .nav-links li {
+            float: none;
+            display: inline-block;
+            font-size: 1.5em;
+            position: relative;
+        }
 
-.nav-links li a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: radial-gradient(circle closest-side, rgba(255, 0, 0, 0.5), transparent);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: -1;
-}
+        .nav-links li a {
+            display: block;
+            color: #e6e6e6;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-family: 'Roboto Mono', monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-.nav-links li a:hover {
-    color: #FFF;
-    background-color: transparent; 
-}
+        .nav-links li a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle closest-side, rgba(255, 0, 0, 0.5), transparent);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
 
-.nav-links li a:hover::before {
-    width: 200%;
-    height: 200%;
-    opacity: 1;
-}
+        .nav-links li a:hover {
+            color: #FFF;
+            background-color: transparent;
+        }
 
-/* Animation for the 'explosion' */
-.nav-links li a:hover::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation: cannonballExplosion .4s ease-out forwards;
-    z-index: -1;
-}
+        .nav-links li a:hover::before {
+            width: 200%;
+            height: 200%;
+            opacity: 1;
+        }
 
-@keyframes cannonballExplosion {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(2);
-        opacity: 0;
-    }
-}
+        /* Animation for the 'explosion' */
+        .nav-links li a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: cannonballExplosion .4s ease-out forwards;
+            z-index: -1;
+        }
 
+        @keyframes cannonballExplosion {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
 
-</style> 
+        /* Additional styles would go here if needed */
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background-color: #000;
+                width: 100%;
+                padding: 10px 0;
+                margin-top: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -140,9 +171,12 @@ nav {
                 <li><a href="https://github.com/fucktardcto">Github</a></li>
             </ul>
         </nav>
+        <img src="header-image.jpg" alt="Image d'en-tête">
     </header>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- Rest of your body content here -->
+    <div class="content-wrapper">
+        <!-- Your content here -->
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
